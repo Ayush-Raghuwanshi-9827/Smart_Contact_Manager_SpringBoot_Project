@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en"
+      th:replace="~{base::parent(~{::#content}, ~{::title}, ~{})}"
+      xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Home page</title>
+    <link rel="stylesheet" data-th-href="@{'/css/output.css'}" />
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.css" rel="stylesheet" />
+    <link rel="stylesheet" data-th-href="@{'/css/output.css'}">
+</head>
+<body>
+<div class="container text-3xl text-center bg-gray-200" id="content">
+    <h1 class="text-2 font-bold"> Welcome to Home page</h1>
+    <p>Hello this is my home page!
+    </p>
+    <h2>Name :<span th:text="${name}"></span></h2>
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.js"></script>
+</body>
+</html>
