@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en"
-      class="dark"
+      class="light"
       th:fragment="parent(content,title,script)"
       xmlns="http://www.w3.org/1999/xhtml"
       xmlns:th="http://www.thymeleaf.org">
@@ -19,7 +19,7 @@
 <!--Common footer-->
 <h1>This is common footer</h1>
 
-
+<script data-th-src="@{'/js/script.js'}"></script>
 <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.js"></script>
 <script data-th-replace="${script}"></script>
 </body>
